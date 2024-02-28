@@ -1,0 +1,96 @@
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1.8rem 0.5rem 1rem;
+  position: relative;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+  margin: 1rem;
+}
+a:hover {
+  color: #010bff;
+}
+
+.routes-container {
+  display: flex;
+  align-items: center;
+}
+
+.Smart-logo {
+  height: 6rem;
+}
+
+#openMenuBtn {
+  position: absolute;
+  right: 10%;
+  display: none;
+}
+#closeBtn {
+  display: none;
+}
+
+.menuLogo {
+  width: 2rem;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1320px) {
+  .navbar-container {
+    position: relative;
+  }
+  .routes-container {
+    width: 40%;
+    height: 100vh;
+    padding: 1rem;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: red;
+  }
+  #closeBtn {
+    display: block;
+    position: relative;
+    left: 85%;
+    width: 1.5rem;
+  }
+  #openMenuBtn {
+    display: block;
+  }
+
+  .closed {
+    display: none;
+  }
+  .Smart-logo {
+    height: 5rem;
+  }
+  .menuLogo {
+    width: 2rem;
+    cursor: pointer;
+  }
+
+  #openMenuBtn {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    /* display: none; */
+  }
+}
+
+@media only screen and (max-width: 476px) {
+  .menuLogo {
+    width: 1rem;
+    cursor: pointer;
+  }
+  .Smart-logo {
+    height: 3rem;
+  }
+}
