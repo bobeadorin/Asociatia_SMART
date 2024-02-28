@@ -1,13 +1,11 @@
 import "./NavbarStyles.css";
 import { Link } from "react-router-dom";
 import routes from "./navRoutes";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 export default function Navbar() {
-  const [isColsed, setIsClosed] = useState(false);
-  useEffect(() => {
-    console.log(isColsed);
-  }, [isColsed]);
+  const [isClosed, setIsClosed] = useState(false);
+
   return (
     <nav className="navbar-container">
       <img
@@ -19,28 +17,39 @@ export default function Navbar() {
         className="menuLogo"
         id="openMenuBtn"
         src={
-          isColsed
+          isClosed
             ? "/sharedLogos/closeIcon.png"
             : "/sharedLogos/hamburgerManuIcon.png"
         }
         alt="menuLogo"
-        onClick={() => setIsClosed(!isColsed)}
+        onClick={() => setIsClosed(!isClosed)}
       />
-      <div className={isColsed ? "routes-container" : "closed"}>
+      <div className={isClosed ? "routes-container" : "closed"}>
         <img
           className="menuLogo"
           id="closeBtn"
           src="/sharedLogos/closeIcon.png"
           alt="CloseBtn"
-          onClick={() => setIsClosed(!isColsed)}
+          onClick={() => setIsClosed(!isClosed)}
         />
-
-        <Link to={routes.homePage}>Acasa</Link>
-        <Link to={routes.aboutUs}>Despre noi</Link>
-        <Link to={routes.projects}>Proiecte</Link>
-        <Link to={routes.becomeVol}>Fii voluntar</Link>
-        <Link to={routes.donate}>Donează</Link>
-        <Link to={routes.contact}>Contact</Link>
+        <div className="navbar-route-btns-container">
+          <Link to={routes.homePage}>Acasa</Link>
+        </div>
+        <div className="navbar-route-btns-container">
+          <Link to={routes.aboutUs}>Despre noi</Link>
+        </div>
+        <div className="navbar-route-btns-container">
+          <Link to={routes.projects}>Proiecte</Link>
+        </div>
+        <div className="navbar-route-btns-container">
+          <Link to={routes.becomeVol}>Fii voluntar</Link>
+        </div>
+        <div className="navbar-route-btns-container">
+          <Link to={routes.donate}>Donează</Link>
+        </div>
+        <div className="navbar-route-btns-container">
+          <Link to={routes.contact}>Contact</Link>
+        </div>
       </div>
     </nav>
   );

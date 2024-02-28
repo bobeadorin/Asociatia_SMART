@@ -1,0 +1,32 @@
+.footer-container {
+  width: 100%;
+  height: 16rem;
+  padding: 1rem;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: #a9acfa;
+  display: flex;
+  align-items: center;
+}
+
+.footerSmartLogo {
+  width: 32rem;
+}
+
+.arrowed-text {
+  display: flex;
+  align-items: center;
+}
+
+.arrowed-text > p {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.infoTitle-footer-p {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 700;
+}

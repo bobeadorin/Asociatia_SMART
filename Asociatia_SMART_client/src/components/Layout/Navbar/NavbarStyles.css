@@ -11,7 +11,7 @@ a {
   text-decoration: none;
   color: black;
   font-size: 2rem;
-  margin: 1rem;
+  margin: 0.5rem;
 }
 a:hover {
   color: #010bff;
@@ -20,6 +20,11 @@ a:hover {
 .routes-container {
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.navbar-route-btns-container {
+  display: inline-block;
 }
 
 .Smart-logo {
@@ -45,23 +50,18 @@ a:hover {
     position: relative;
   }
   .routes-container {
-    width: 40%;
-    height: 100vh;
-    padding: 1rem;
+    width: 100%;
+    height: 20rem;
     position: absolute;
-    top: 0%;
+    top: 100%;
     right: 0%;
     display: flex;
-    align-items: flex-start;
+    align-items: flex-end;
     flex-direction: column;
-    background-color: red;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 3px 3px rgb(100, 97, 97);
   }
-  #closeBtn {
-    display: block;
-    position: relative;
-    left: 85%;
-    width: 1.5rem;
-  }
+
   #openMenuBtn {
     display: block;
   }
@@ -81,7 +81,19 @@ a:hover {
     position: absolute;
     right: 10%;
     top: 50%;
-    /* display: none; */
+  }
+  .navbar-route-btns-container {
+    width: 100%;
+    text-align: right;
+    padding: 0.7rem;
+    border-top: 1px solid rgb(168, 166, 166);
+  }
+  a {
+    font-size: 25px;
+  }
+
+  .closed {
+    display: none;
   }
 }
 
@@ -92,5 +104,25 @@ a:hover {
   }
   .Smart-logo {
     height: 3rem;
+  }
+  .navbar-route-btns-container {
+    width: 100%;
+    text-align: right;
+    padding: 0.3rem;
+    border-top: 1px solid rgb(168, 166, 166);
+  }
+  a {
+    font-size: 15px;
+  }
+  .routes-container {
+    width: 100%;
+    height: 13rem;
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
   }
 }
