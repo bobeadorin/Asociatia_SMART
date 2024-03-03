@@ -3,11 +3,30 @@ import "./FooterStyles.css";
 export default function Footer() {
   return (
     <footer className="footer-container">
-      <img
-        className="footerSmartLogo"
-        src="/sharedLogos/FooterSmartLogo.png"
-        alt=""
-      />
+      <div className="footer-logo-info-container">
+        <img
+          className="footerSmartLogo"
+          src="/sharedLogos/FooterSmartLogo.png"
+          alt=""
+        />
+        <div className="footer-media-logos">
+          <a href="">
+            <img
+              className="media-logo-Fo"
+              src="public\sharedLogos\whiteFacebookLogo.png"
+              alt=""
+            />
+          </a>
+          <a href="">
+            <img
+              className="media-logo-Fo"
+              src="public\sharedLogos\whiteInstagramLogo.png"
+              alt=""
+            />
+          </a>
+        </div>
+      </div>
+
       <div>
         <p className="infoTitle-footer-p">Informații utile:</p>
         <span className="arrowed-text">
