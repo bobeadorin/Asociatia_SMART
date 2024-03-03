@@ -1,0 +1,27 @@
+.homepage-ourReasonSection {
+  background-color: #f2f8fa;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem;
+}
+
+.reasonSection-text-container {
+  width: 70%;
+  margin-right: 1rem;
+}
+.reasonSection-text-container > h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #4e5152;
+}
+
+.reasonSection-text-container > p {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  text-align: justify;
+}
+@media only screen and (max-width: 1320px) {
+}
+@media only screen and (max-width: 476px) {
+}

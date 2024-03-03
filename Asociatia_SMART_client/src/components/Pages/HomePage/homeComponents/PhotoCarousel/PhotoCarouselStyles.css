@@ -1,0 +1,13 @@
+.carousel-container {
+  width: 100%;
+  height: 50rem;
+
+  position: relative;
+}
+
+.carouselLogoOnTop {
+  width: 50rem;
+  position: absolute;
+  bottom: 6%;
+  left: 4%;
+}
