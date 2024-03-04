@@ -1,0 +1,87 @@
+.textCard-container {
+  width: 50rem;
+}
+.textCard-title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.textCard-title-wrapper > h2 {
+  font-size: 3rem;
+  color: white;
+  margin: 2rem;
+}
+
+.textCard-title-wrapper > hr {
+  width: 60%;
+  height: 4px;
+  background-color: white;
+}
+
+.textCard-container > p {
+  color: white;
+  padding: 1rem;
+  font-size: 1.9rem;
+  text-align: justify;
+  width: 90%;
+  margin-left: 1rem;
+}
+@media only screen and (max-width: 1320px) {
+  .textCard-container {
+    width: 100%;
+    height: 25rem;
+    display: block;
+  }
+  .textCard-title-wrapper > h2 {
+    font-size: 3rem;
+    color: white;
+    margin: 2rem;
+    display: block;
+  }
+
+  .textCard-title-wrapper > hr {
+    width: 80%;
+    height: 4px;
+    background-color: white;
+  }
+
+  .textCard-container > p {
+    color: white;
+    padding: 0rem;
+    font-size: 1rem;
+    text-align: justify;
+    width: 90%;
+    margin-left: 1rem;
+  }
+}
+@media only screen and (max-width: 476px) {
+  .textCard-container {
+    width: 100%;
+    height: 25rem;
+    display: block;
+    margin-bottom: 1rem;
+  }
+  .textCard-title-wrapper > h2 {
+    font-size: 2.4rem;
+    color: white;
+    margin: 1rem;
+    display: block;
+  }
+
+  .textCard-title-wrapper > hr {
+    width: 80%;
+    height: 4px;
+    background-color: white;
+  }
+
+  .textCard-container > p {
+    color: white;
+    padding: 0rem;
+    font-size: 1rem;
+    text-align: left;
+    width: 90%;
+    margin-left: 1rem;
+  }
+}

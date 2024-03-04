@@ -11,3 +11,33 @@
   bottom: 6%;
   left: 4%;
 }
+
+@media only screen and (max-width: 1320px) {
+  .carousel-container {
+    width: 100%;
+    height: 40rem;
+
+    position: relative;
+  }
+  .carouselLogoOnTop {
+    width: 30rem;
+    position: absolute;
+    bottom: 6%;
+    left: 4%;
+  }
+}
+
+@media only screen and (max-width: 476px) {
+  .carousel-container {
+    width: 100%;
+    height: 20rem;
+
+    position: relative;
+  }
+  .carouselLogoOnTop {
+    width: 13rem;
+    position: absolute;
+    bottom: 8%;
+    left: 4dvb;
+  }
+}

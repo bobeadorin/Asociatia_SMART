@@ -7,10 +7,10 @@ export default function PhotoCarousel() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setPageNumber((prev) => (prev + 1) % carouselRoutes.length); // Use modulo to loop through carouselRoutes
+      setPageNumber((prev) => (prev + 1) % carouselRoutes.length);
     }, 5000);
 
-    return () => clearInterval(interval); // Cleanup interval on unmount
+    return () => clearInterval(interval);
   }, []);
 
   return (

@@ -1,0 +1,48 @@
+.homePageInfo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  padding: 3rem;
+}
+
+.text-wrapper {
+  text-align: center;
+  width: 40%;
+  margin-bottom: 3rem;
+}
+
+.text-wrapper > h3 {
+  margin: 1rem;
+  font-size: 2rem;
+}
+.text-wrapper > p {
+  font-size: 1.5rem;
+  text-align: justify;
+}
+
+.donateInfo-title {
+  margin-bottom: 4rem !important;
+}
+@media only screen and (max-width: 1320px) {
+  .homePageInfo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .text-wrapper {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  .text-wrapper > h3 {
+    margin: 1rem;
+    font-size: 2rem;
+  }
+  .text-wrapper > p {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
