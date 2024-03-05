@@ -10,14 +10,17 @@ export default function Footer() {
           alt=""
         />
         <div className="footer-media-logos">
-          <a href="">
+          <a
+            href="https://www.facebook.com/profile.php?id=61556478462754"
+            target="_blank"
+          >
             <img
               className="media-logo-Fo"
               src="public\sharedLogos\whiteFacebookLogo.png"
               alt=""
             />
           </a>
-          <a href="">
+          <a href="https://www.instagram.com/asociatiasmart/" target="_blank">
             <img
               className="media-logo-Fo"
               src="public\sharedLogos\whiteInstagramLogo.png"

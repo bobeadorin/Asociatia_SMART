@@ -5,6 +5,11 @@ import { useState } from "react";
 
 export default function Navbar() {
   const [isClosed, setIsClosed] = useState(false);
+  const [activeLink, setActiveLink] = useState(routes.homePage);
+
+  const handleLinkClick = (route) => {
+    setActiveLink(route);
+  };
 
   return (
     <nav className="navbar-container">
@@ -33,22 +38,58 @@ export default function Navbar() {
           onClick={() => setIsClosed(!isClosed)}
         />
         <div className="navbar-route-btns-container">
-          <Link to={routes.homePage}>Acasa</Link>
+          <Link
+            style={{ color: activeLink === routes.homePage ? "blue" : "" }}
+            to={routes.homePage}
+            onClick={() => handleLinkClick(routes.homePage)}
+          >
+            Acasa
+          </Link>
         </div>
         <div className="navbar-route-btns-container">
-          <Link to={routes.aboutUs}>Despre noi</Link>
+          <Link
+            style={{ color: activeLink === routes.aboutUs ? "blue" : "" }}
+            to={routes.aboutUs}
+            onClick={() => handleLinkClick(routes.aboutUs)}
+          >
+            Despre noi
+          </Link>
         </div>
         <div className="navbar-route-btns-container">
-          <Link to={routes.projects}>Proiecte</Link>
+          <Link
+            style={{ color: activeLink === routes.projects ? "blue" : "" }}
+            to={routes.projects}
+            onClick={() => handleLinkClick(routes.projects)}
+          >
+            Proiecte
+          </Link>
         </div>
         <div className="navbar-route-btns-container">
-          <Link to={routes.becomeVol}>Fii voluntar</Link>
+          <Link
+            style={{ color: activeLink === routes.becomeVol ? "blue" : "" }}
+            to={routes.becomeVol}
+            onClick={() => handleLinkClick(routes.becomeVol)}
+          >
+            Fii voluntar
+          </Link>
         </div>
         <div className="navbar-route-btns-container">
-          <Link to={routes.donate}>Donează</Link>
+          <Link
+            style={{ color: activeLink === routes.donate ? "blue" : "" }}
+            to={routes.donate}
+            onClick={() => handleLinkClick(routes.donate)}
+          >
+            Donează
+          </Link>
         </div>
         <div className="navbar-route-btns-container">
-          <Link to={routes.contact}>Contact</Link>
+          <Link
+            style={{ color: activeLink === routes.contact ? "blue" : "" }}
+            to={routes.contact}
+            onClick={() => handleLinkClick(routes.contact)}
+          >
+            Contact
+          </Link>
         </div>
       </div>
     </nav>

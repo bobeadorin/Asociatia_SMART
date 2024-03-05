@@ -25,17 +25,20 @@ export default function Header() {
         </div>
       </div>
       <div className="header-logoContainers">
-        <img
-          className="purpleLogos"
-          src="/sharedLogos/facebookLogoPurple.png"
-          alt=""
-        />
-
-        <img
-          src="/sharedLogos/instaPurpleLogo.png"
-          className="purpleLogos"
-          alt=""
-        />
+        <a
+          href="https://www.facebook.com/profile.php?id=61556478462754"
+          id="purpleLogos"
+          target="_blank"
+        >
+          <img src="/sharedLogos/facebookLogoPurple.png" alt="" />
+        </a>
+        <a
+          href="https://www.instagram.com/asociatiasmart/"
+          id="purpleLogos"
+          target="_blank"
+        >
+          <img src="/sharedLogos/instaPurpleLogo.png" alt="" />
+        </a>
       </div>
     </header>
   );
