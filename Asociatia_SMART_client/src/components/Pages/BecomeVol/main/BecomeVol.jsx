@@ -4,7 +4,7 @@ import ImgSection from "../../../UtilityComponents/ImageSections/ImgSection";
 export default function BecomeVol() {
   return (
     <section>
-      <ImgSection url="public\BecomeVolLogos\BecomeVolLogo.png" />
+      <ImgSection url="/BecomeVolLogos/BecomeVolLogo.png" />
       <div className="BecomeVolunteer-wrapper">
         <h1>Alătură-te misiunii noastre de transformare!</h1>
         <p>

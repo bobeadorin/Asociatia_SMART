@@ -41,8 +41,9 @@
     padding-left: 0.5rem;
     padding-right: 0.5rem;
   }
-  .purpleLogos {
-    width: 1.2rem;
+  #purpleLogos {
+    width: 0.7rem;
+    margin: 1.2rem;
   }
   .header-logoContainers {
     display: flex;

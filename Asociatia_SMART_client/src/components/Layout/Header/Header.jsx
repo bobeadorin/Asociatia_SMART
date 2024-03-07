@@ -7,7 +7,7 @@ export default function Header() {
         <div className="header-info-wrapper" id="left-wrapper">
           <img
             className="header-logos"
-            src="/public/sharedLogos/HeaderPhoneLogo.png"
+            src="/sharedLogos/HeaderPhoneLogo.png"
             alt=""
           />
           <span className="header-info-span"> +40 774 683 032</span>
@@ -16,7 +16,7 @@ export default function Header() {
         <div className="header-info-wrapper" id="right-wrapper">
           <img
             className="header-logos"
-            src="/public/sharedLogos/mailLogo.png"
+            src="/sharedLogos/mailLogo.png"
             alt=""
           />
           <span id="header-mailSpan" className="header-info-span">

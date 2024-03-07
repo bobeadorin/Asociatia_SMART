@@ -1,4 +1,7 @@
 import "./FooterStyles.css";
+import { Link } from "react-router-dom";
+import legalRoutes from "./legalInfoRoutes";
+import routes from "../Navbar/navRoutes";
 
 export default function Footer() {
   return (
@@ -16,14 +19,14 @@ export default function Footer() {
           >
             <img
               className="media-logo-Fo"
-              src="public\sharedLogos\whiteFacebookLogo.png"
+              src="/sharedLogos/whiteFacebookLogo.png"
               alt=""
             />
           </a>
           <a href="https://www.instagram.com/asociatiasmart/" target="_blank">
             <img
               className="media-logo-Fo"
-              src="public\sharedLogos\whiteInstagramLogo.png"
+              src="/sharedLogos/whiteInstagramLogo.png"
               alt=""
             />
           </a>
@@ -34,11 +37,18 @@ export default function Footer() {
         <p className="infoTitle-footer-p">Informații utile:</p>
         <span className="arrowed-text">
           <img src="/sharedLogos/arrow.png" alt="" />
-          <p>Politica de confidențialitate</p>
+          <p>
+            {" "}
+            <Link to={legalRoutes.policyRoute}>
+              Politica de confidențialitate
+            </Link>
+          </p>
         </span>
         <span className="arrowed-text">
           <img src="/sharedLogos/arrow.png" alt="" />
-          <p>Termenii și condițiile</p>
+          <p>
+            <Link to={legalRoutes.termsRoute}>Termeni și condiții</Link>
+          </p>
         </span>
       </div>
     </footer>
