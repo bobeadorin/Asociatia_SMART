@@ -31,18 +31,27 @@
     justify-content: space-around;
     flex-direction: column;
     padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
   .text-wrapper {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 100%;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
   }
   .text-wrapper > h3 {
     margin: 1rem;
     font-size: 2rem;
   }
   .text-wrapper > p {
-    font-size: 1.5rem;
-    text-align: center;
+    font-size: 1.1rem;
+    text-align: justify;
+    width: 100%;
+  }
+  .donateInfo-title {
+    margin-bottom: 1rem !important;
   }
 }

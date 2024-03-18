@@ -1,22 +1,38 @@
 import "./NavbarStyles.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import routes from "./navRoutes";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 
 export default function Navbar() {
   const [isClosed, setIsClosed] = useState(false);
   const [activeLink, setActiveLink] = useState(routes.homePage);
+  const navigate = useNavigate();
+  const menuRef = useRef();
 
   const handleLinkClick = (route) => {
     setActiveLink(route);
   };
 
+  const handleHomeLogoClick = () => {
+    navigate("/");
+  };
+
+  useEffect(() => {
+    const handleOutsideClick = (e) => {
+      if (!menuRef.current.contains(e.target)) {
+        setIsClosed(false);
+      }
+    };
+    document.addEventListener("mousedown", handleOutsideClick);
+  }, []);
+
   return (
-    <nav className="navbar-container">
+    <nav ref={menuRef} className="navbar-container">
       <img
         className="Smart-logo"
         src="/sharedLogos/SmartLogo.png"
         alt="HambugerMenu"
+        onClick={handleHomeLogoClick}
       />
       <img
         className="menuLogo"

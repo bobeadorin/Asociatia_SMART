@@ -1,5 +1,4 @@
 import "./TermsAndConditionsStyles.css";
-import TextBlock from "./TermsAndConditionsComponents/TextBlock";
 
 export default function TermsAndConditions(props) {
   return (
