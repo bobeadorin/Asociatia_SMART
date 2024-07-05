@@ -31,10 +31,11 @@
 .terms-text-wrapper {
   margin: 2rem;
   padding-left: 3rem;
+  font-size: 1.5rem;
 }
 
 .terms-normalText {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   margin: 1rem;
 }
 
@@ -63,7 +64,7 @@
   }
 
   .terms-subTitles {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     margin: 1rem;
     padding-left: 1rem;
   }
@@ -71,22 +72,23 @@
   .terms-text-wrapper {
     margin: 2rem;
     padding-left: 3rem;
+    font-size: 1.3rem;
   }
 
   .terms-normalText {
-    font-size: 1rem;
+    font-size: 1.3rem;
     margin: 1rem;
   }
 }
 @media only screen and (max-width: 476px) {
   .termsAndConditions-container {
-    padding: 1.3rem 0 1.3rem 0;
+    padding: 1.4rem 0 1.4rem 0;
   }
   .terms-content-wrapper {
     width: 100%;
   }
   .terms-starting-p {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     margin: 1rem;
     margin-top: 0.4rem;
   }
@@ -97,17 +99,19 @@
   }
 
   .terms-subTitles {
-    font-size: 1rem;
+    font-size: 1.3rem;
     margin: 1rem;
   }
 
   .terms-text-wrapper {
     margin: 1rem;
     padding-left: 3rem;
+    font-size: 1.2rem;
   }
 
   .terms-normalText {
     font-size: 1rem;
     margin: 0rem;
+    font-size: 1.2rem;
   }
 }

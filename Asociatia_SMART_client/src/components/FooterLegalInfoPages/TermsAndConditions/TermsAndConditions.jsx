@@ -1,6 +1,6 @@
 import "./TermsAndConditionsStyles.css";
 
-export default function TermsAndConditions(props) {
+export default function TermsAndConditions() {
   return (
     <article className="termsAndConditions-container">
       <section className="terms-content-wrapper">
