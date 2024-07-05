@@ -4,6 +4,33 @@
   position: relative;
 }
 
+.values-aboutUs-section {
+  padding: 5rem;
+  color: #4e5152;
+}
+
+.values-aboutUs-header-container {
+  display: flex;
+  align-items: center;
+}
+
+.values-aboutUs-header-container > hr {
+  width: 80%;
+  height: 0.2rem;
+  background-color: #4e5152;
+  border: none;
+}
+
+.values-aboutUs-header-container > h2 {
+  font-size: 10rem;
+}
+
+.values-aboutUs-p-container > p {
+  font-size: 1.5rem;
+  margin: 1em;
+  margin-left: 0;
+}
+
 @media only screen and (max-width: 1320px) {
   .aboutUs-card-container {
     padding: 1rem;
@@ -11,5 +38,42 @@
     position: relative;
   }
 }
+
+@media only screen and (max-width: 800px) {
+  .values-aboutUs-header-container > h2 {
+    font-size: 5rem;
+  }
+}
+
 @media only screen and (max-width: 476px) {
+  .values-aboutUs-section {
+    padding: 2rem;
+    color: #4e5152;
+  }
+
+  .values-aboutUs-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .values-aboutUs-header-container > hr {
+    display: none;
+  }
+
+  .values-aboutUs-header-container > h2 {
+    font-size: 4rem;
+  }
+  .values-aboutUs-p-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .values-aboutUs-p-container > p {
+    font-size: 1.5rem;
+    margin: 0.5em;
+    margin-left: 0;
+    width: 90%;
+  }
 }

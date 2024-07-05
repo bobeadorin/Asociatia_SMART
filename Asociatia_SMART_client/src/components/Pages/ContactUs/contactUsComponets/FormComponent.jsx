@@ -1,5 +1,5 @@
 import "./FormComponentStyles.css";
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 export default function FormComponent() {
   const [name, setName] = useState("");

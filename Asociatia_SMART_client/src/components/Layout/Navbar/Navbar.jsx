@@ -19,6 +19,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleOutsideClick = (e) => {
+      console.log(menuRef.current);
       if (!menuRef.current.contains(e.target)) {
         setIsClosed(false);
       }
@@ -59,7 +60,7 @@ export default function Navbar() {
             to={routes.homePage}
             onClick={() => handleLinkClick(routes.homePage)}
           >
-            Acasa
+            ACASĂ
           </Link>
         </div>
         <div className="navbar-route-btns-container">
@@ -68,7 +69,7 @@ export default function Navbar() {
             to={routes.aboutUs}
             onClick={() => handleLinkClick(routes.aboutUs)}
           >
-            Despre noi
+            DESPRE NOI
           </Link>
         </div>
         <div className="navbar-route-btns-container">
@@ -77,7 +78,7 @@ export default function Navbar() {
             to={routes.projects}
             onClick={() => handleLinkClick(routes.projects)}
           >
-            Proiecte
+            PROIECTE
           </Link>
         </div>
         <div className="navbar-route-btns-container">
@@ -86,7 +87,7 @@ export default function Navbar() {
             to={routes.becomeVol}
             onClick={() => handleLinkClick(routes.becomeVol)}
           >
-            Fii voluntar
+            FII VOLUNTAR
           </Link>
         </div>
         <div className="navbar-route-btns-container">
@@ -95,7 +96,7 @@ export default function Navbar() {
             to={routes.donate}
             onClick={() => handleLinkClick(routes.donate)}
           >
-            Donează
+            DONEAZĂ
           </Link>
         </div>
         <div className="navbar-route-btns-container">
@@ -104,7 +105,7 @@ export default function Navbar() {
             to={routes.contact}
             onClick={() => handleLinkClick(routes.contact)}
           >
-            Contact
+            CONTACT
           </Link>
         </div>
       </div>

@@ -1,8 +1,8 @@
-const corouselRoutes = [
+const carouselRoutes = [
   "/HomePageLogos/CarouselPhotos/carouselPhoto1.png",
   "/HomePageLogos/CarouselPhotos/CarouselPhoto2.png",
   "/HomePageLogos/CarouselPhotos/CarouselPhoto3.png",
   "/HomePageLogos/CarouselPhotos/CarouselPhoto4.png",
 ];
 
-export default corouselRoutes;
+export default carouselRoutes;
