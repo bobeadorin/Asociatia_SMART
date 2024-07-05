@@ -1,5 +1,5 @@
 import "./PhotoCarouselStyles.css";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import carouselRoutes from "./carouselImgRoutes.js";
 
 export default function PhotoCarousel() {
