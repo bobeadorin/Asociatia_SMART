@@ -5,14 +5,6 @@ import carouselRoutes from "./carouselImgRoutes.js";
 export default function PhotoCarousel() {
   const [pageNumber, setPageNumber] = useState(0);
 
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     setPageNumber((prev) => (prev + 1) % carouselRoutes.length);
-  //   }, 5000);
-
-  //   return () => clearInterval(interval);
-  // }, []);
-
   const handleOnClickIncrement = () => {
     if (pageNumber === 3) {
       setPageNumber(0);
