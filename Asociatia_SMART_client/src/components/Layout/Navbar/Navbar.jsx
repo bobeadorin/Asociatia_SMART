@@ -11,6 +11,7 @@ export default function Navbar() {
 
   const handleLinkClick = (route) => {
     setActiveLink(route);
+    setIsClosed(false);
   };
 
   const handleHomeLogoClick = () => {

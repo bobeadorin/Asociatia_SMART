@@ -33,13 +33,13 @@ export default function PhotoCarousel() {
     >
       <img
         className="arrowBtn left"
-        src="public\HomePageLogos\carouselArrow.png"
+        src="\HomePageLogos\carouselArrow.png"
         alt=""
         onClick={handleOnClickDecrement}
       />
       <img
         className="arrowBtn right"
-        src="public\HomePageLogos\carouselArrow.png"
+        src="\HomePageLogos\carouselArrow.png"
         alt=""
         onClick={handleOnClickIncrement}
       />
