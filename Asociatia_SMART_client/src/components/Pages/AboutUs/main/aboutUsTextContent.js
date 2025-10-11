@@ -6,7 +6,7 @@ const firstCard = {
 
 const secondCard = {
   title: "Misiune",
-  description: `Misiunea Asociației noastre este de a oferi mai multe șanse copiilor și tinerilor din medii sărace, cu accesibilitate limitată, concentrându-ne asupra comunei Grindu. În acest sens, ne propunem să:
+  description: `Misiunea Asociației noastre este de a oferi mai multe șanse copiilor și tinerilor din medii sărace, cu accesibilitate limitată. În acest sens, ne propunem să:
 
     Ajutăm copiii și tinerii din mediul rural să-și extindă viziunea și să depășească limitele impuse de condițiile socio-economice.
     Învățăm copiii și tinerii să conceapă idei diferite, să-și cunoască și să-și exercite drepturile, să atingă domenii noi, inovatoare.

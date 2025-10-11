@@ -11,6 +11,7 @@ import HomePage from "./components/Pages/HomePage/main/HomePage.jsx";
 import Projects from "./components/Pages/Projects/main/Projects.jsx";
 import ConfidentialityPolicy from "./components/FooterLegalInfoPages/ConfidentialityPolicy/ConfidentialityPolicy.jsx";
 import TermsAndConditions from "./components/FooterLegalInfoPages/TermsAndConditions/TermsAndConditions.jsx";
+import ProjectBeezSmart from "./components/Pages/Projects/projectPages/BeezSmart/ProjectBeezSmart.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
@@ -23,11 +24,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route element={<ContactUs />} path="/Contact" />
           <Route element={<Donate />} path="/Doneaza" />
           <Route element={<Projects />} path="/Proiecte" />
-          <Route
-            element={<ConfidentialityPolicy />}
-            path="/PoliticaDeConfidentialitate"
-          />
+          <Route element={<Projects />} path="/Proiecte/:projectName" />
+          <Route element={<ConfidentialityPolicy />} path="/PoliticaDeConfidentialitate" />
           <Route element={<TermsAndConditions />} path="/TermeniSiConditii" />
+          <Route element={<ProjectBeezSmart />} path="/Proiecte/BeezSMART" />
         </Routes>
       </Layout>
     </React.StrictMode>

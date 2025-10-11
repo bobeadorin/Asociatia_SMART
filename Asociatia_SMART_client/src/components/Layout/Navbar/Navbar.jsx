@@ -20,7 +20,6 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleOutsideClick = (e) => {
-      console.log(menuRef.current);
       if (!menuRef.current.contains(e.target)) {
         setIsClosed(false);
       }
@@ -30,20 +29,11 @@ export default function Navbar() {
 
   return (
     <nav ref={menuRef} className="navbar-container">
-      <img
-        className="Smart-logo"
-        src="/sharedLogos/SmartLogo.png"
-        alt="HambugerMenu"
-        onClick={handleHomeLogoClick}
-      />
+      <img className="Smart-logo" src="/sharedLogos/SmartLogo.png" alt="HambugerMenu" onClick={handleHomeLogoClick} />
       <img
         className="menuLogo"
         id="openMenuBtn"
-        src={
-          isClosed
-            ? "/sharedLogos/closeIcon.png"
-            : "/sharedLogos/hamburgerManuIcon.png"
-        }
+        src={isClosed ? "/sharedLogos/closeIcon.png" : "/sharedLogos/hamburgerManuIcon.png"}
         alt="menuLogo"
         onClick={() => setIsClosed(!isClosed)}
       />

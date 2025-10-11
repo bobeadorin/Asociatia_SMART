@@ -1,0 +1,605 @@
+/* ====================== */
+/* Header section */
+/* ====================== */
+.beezSmart-header-section {
+  width: 100%;
+  font-size: 1.4vw;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.beez-titleSection {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
+.beez-titleSection-Location {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.beez-titleSection-Year {
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.beezSmart-header-section > p {
+  flex: 0.9;
+  padding: 1rem;
+  text-align: justify;
+}
+
+/* ====================== */
+/* Section one */
+/* ====================== */
+.beezSmart-section-one {
+  padding: 2rem;
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 1rem;
+  box-sizing: border-box;
+}
+
+.beezSmart-section-one-text-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.beezSmart-section-one-text-wrapper > p {
+  font-size: 1.5rem;
+  text-align: justify;
+}
+
+.beezSmart-section-one > img {
+  flex: 1;
+  max-height: 30rem;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* ====================== */
+/* Section two - Beehive */
+/* ====================== */
+.beezSmart-section-two {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  gap: 2rem;
+}
+
+.beehive-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.hex-row {
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+  width: 100%;
+}
+
+.hex-row-top {
+  position: relative;
+  top: 110px;
+  left: 33px;
+}
+
+.hex-row-bottom {
+  position: relative;
+  bottom: 120px;
+  left: 33px;
+}
+
+.hex-row.offset {
+  margin-left: 65px;
+}
+
+.hex {
+  width: 250px;
+  aspect-ratio: 1 / 0.866;
+  clip-path: polygon(50% -50%, 100% 50%, 50% 150%, 0 50%);
+  overflow: hidden;
+  background: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.facebookLogo-beez {
+  height: 2.5rem;
+}
+.yotubeLogo-beez {
+  height: 2.5rem;
+}
+
+.hex img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.beeLogos-and-text-container {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10rem;
+}
+
+.beeLogos-and-text-container > p {
+  height: 50%;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.beeImage-right,
+.beeImage-left {
+  height: 15rem;
+}
+
+/* ====================== */
+/* Section two and impact */
+/* ====================== */
+.beezSmart-section-two-and-a-half {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 2rem;
+  /* height: 30rem; */
+}
+
+.beezSmart-column {
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  padding: 1.5rem;
+  flex: 1;
+  min-width: 300px;
+  height: 100%;
+}
+
+.beezSmart-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.beezSmart-list {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin: 0;
+}
+
+.beezSmart-list-item {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+  text-align: justify;
+}
+
+/* ====================== */
+/* Section three */
+/* ====================== */
+.beezSmart-section-three {
+  padding: 2rem 1rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  box-sizing: border-box;
+}
+
+.beezSmart-section-three > img {
+  flex: 1;
+  max-height: 30rem;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* ====================== */
+/* Testimonials section */
+/* ====================== */
+.beezSmart-testimonials-section {
+  padding: 2rem;
+}
+
+.beezSmart-testimonials-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.beezSmart-testimonials-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.testimonial {
+  text-align: justify;
+  flex: 1;
+  min-width: 250px;
+  padding: 1rem;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+}
+
+/* ====================== */
+/* Bottom section */
+/* ====================== */
+.beezSmart-bottom-section {
+  display: flex;
+  font-size: 1.3rem;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+  padding: 2rem 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.europoLogo {
+  height: 3rem;
+}
+
+.press-links {
+  font-size: 1.3rem;
+  word-break: break-all;
+}
+
+.link-pdf {
+  text-align: center;
+  font-size: 1.3rem;
+}
+.beezSmartMainLogo {
+  height: 6rem;
+  position: relative;
+  left: 60%;
+  bottom: 80px;
+}
+
+/* ====================== */
+/* Tablet Responsive (768px - 1024px) */
+/* ====================== */
+
+@media (min-width: 1900px) {
+  .beezSmart-section-two-and-a-half {
+    height: 30rem;
+  }
+}
+@media (max-width: 1900px) {
+  .beezSmart-section-one {
+    flex: 1;
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    padding: 1rem;
+  }
+  .beezSmartMainLogo {
+    height: 6rem;
+    position: relative;
+    left: 70%;
+    bottom: 80px;
+  }
+}
+@media (max-width: 1024px) {
+  .beezSmart-header-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .beez-titleSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .beezSmartMainLogo {
+    height: 6rem;
+    position: static;
+  }
+  .beez-titleSection {
+    white-space: normal;
+  }
+
+  .beezSmart-section-one {
+    flex-direction: column;
+  }
+
+  .beezSmart-section-one > img {
+    max-height: 25rem;
+    width: 100%;
+  }
+
+  .beezSmart-section-two {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .beeLogos-and-text-container {
+    width: 100%;
+    gap: 2rem;
+  }
+
+  .beeImage-right,
+  .beeImage-left {
+    height: 10rem;
+  }
+
+  .hex-row {
+    gap: 5rem;
+  }
+
+  .hex-row-top {
+    top: 80px;
+    left: 20px;
+  }
+
+  .hex-row-bottom {
+    bottom: 90px;
+    left: 20px;
+  }
+
+  .hex-row.offset {
+    margin-left: 40px;
+  }
+
+  .hex {
+    width: 180px;
+  }
+
+  .beezSmart-section-two-and-a-half {
+    flex-direction: column;
+    width: 95%;
+  }
+
+  .beezSmart-column {
+    min-width: 100%;
+  }
+
+  .beezSmart-section-three {
+    flex-direction: column;
+  }
+
+  .beezSmart-section-three > img {
+    max-height: 20rem;
+    width: 100%;
+  }
+
+  .beezSmart-testimonials-container {
+    flex-direction: column;
+  }
+
+  .beezSmart-bottom-section {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* ====================== */
+/* Mobile Responsive (max-width: 768px) */
+/* ====================== */
+@media (max-width: 768px) {
+  .beezSmart-header-section {
+    font-size: 3vw;
+    margin-top: 2rem;
+    padding: 0 0.5rem;
+  }
+
+  .beez-titleSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .beezSmartMainLogo {
+    height: 4rem;
+    position: static;
+  }
+  .b .beez-titleSection h1 {
+    font-size: 1.5rem;
+  }
+
+  .beez-titleSection-Location,
+  .beez-titleSection-Year {
+    font-size: 1.2rem;
+  }
+
+  .beezSmart-section-one {
+    padding: 1rem;
+  }
+
+  .beezSmart-section-one-text-wrapper > p {
+    font-size: 1rem;
+  }
+
+  .beezSmart-section-one > img {
+    max-height: 20rem;
+  }
+
+  .beezSmart-section-two {
+    padding: 1rem;
+  }
+
+  .beeLogos-and-text-container > p {
+    font-size: 1rem;
+  }
+
+  .beeImage-right,
+  .beeImage-left {
+    height: 8rem;
+  }
+
+  .hex-row {
+    gap: 3rem;
+  }
+
+  .hex-row-top {
+    top: 60px;
+    left: 15px;
+  }
+
+  .hex-row-bottom {
+    bottom: 70px;
+    left: 15px;
+  }
+
+  .hex-row.offset {
+    margin-left: 30px;
+  }
+
+  .hex {
+    width: 120px;
+  }
+
+  .beezSmart-section-two-and-a-half {
+    padding: 1rem;
+    width: 90%;
+  }
+
+  .beezSmart-title {
+    font-size: 1.5rem;
+  }
+
+  .beezSmart-list-item {
+    font-size: 1rem;
+  }
+
+  .beezSmart-section-three {
+    padding: 1rem;
+  }
+
+  .beezSmart-section-three > img {
+    max-height: 15rem;
+  }
+
+  .beezSmart-testimonials-section {
+    padding: 1rem;
+  }
+
+  .beezSmart-testimonials-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .testimonial {
+    font-size: 0.9rem;
+  }
+
+  .beezSmart-bottom-section {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .press-links,
+  .link-pdf {
+    font-size: 0.9rem;
+  }
+}
+
+/* ====================== */
+/* Small Mobile (max-width: 480px) */
+/* ====================== */
+@media (max-width: 480px) {
+  .beez-titleSection h1 {
+    font-size: 1.2rem;
+  }
+
+  .beez-titleSection-Location,
+  .beez-titleSection-Year {
+    font-size: 1rem;
+  }
+
+  .beezSmart-section-one-text-wrapper > p {
+    font-size: 0.9rem;
+  }
+
+  .beeLogos-and-text-container > p {
+    font-size: 0.9rem;
+  }
+
+  .beeImage-right,
+  .beeImage-left {
+    height: 6rem;
+  }
+
+  .hex-row {
+    gap: 2rem;
+  }
+
+  .hex-row-top {
+    top: 45px;
+    left: 10px;
+  }
+
+  .hex-row-bottom {
+    bottom: 55px;
+    left: 10px;
+  }
+
+  .hex-row.offset {
+    margin-left: 20px;
+  }
+
+  .hex {
+    width: 90px;
+  }
+
+  .beezSmart-title {
+    font-size: 1.2rem;
+  }
+
+  .beezSmart-list-item {
+    font-size: 0.85rem;
+  }
+
+  .beezSmart-section-three > img {
+    max-height: 12rem;
+  }
+
+  .beezSmart-testimonials-section h2 {
+    font-size: 1.2rem;
+  }
+
+  .testimonial {
+    font-size: 0.85rem;
+    padding: 0.8rem;
+  }
+
+  .beezSmart-bottom-section {
+    font-size: 0.9rem;
+  }
+
+  .europoLogo {
+    height: 2.5rem;
+  }
+
+  .press-links,
+  .link-pdf {
+    font-size: 0.85rem;
+  }
+}

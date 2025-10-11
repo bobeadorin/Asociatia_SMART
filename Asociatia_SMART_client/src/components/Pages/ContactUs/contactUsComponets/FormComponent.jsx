@@ -33,32 +33,13 @@ export default function FormComponent() {
     <section className="formContainer-section">
       <form ref={form} onSubmit={sendEmail} className="contactUs-form">
         <label>Numele tău:</label>
-        <input
-          type="text"
-          name="user_name"
-          onChange={(e) => setName(e.target.value)}
-          value={name}
-        />
+        <input type="text" name="user_name" onChange={(e) => setName(e.target.value)} value={name} />
         <label>Adresa de email:</label>
-        <input
-          type="email"
-          name="user_email"
-          onChange={(e) => setEmail(e.target.value)}
-          value={email}
-        />
+        <input type="email" name="user_email" onChange={(e) => setEmail(e.target.value)} value={email} />
         <label>Subiect:</label>
-        <input
-          type="text"
-          name="user_subject"
-          onChange={(e) => setSubject(e.target.value)}
-          value={subject}
-        />
+        <input type="text" name="user_subject" onChange={(e) => setSubject(e.target.value)} value={subject} />
         <label>Mesajul tău:</label>
-        <textarea
-          name="message"
-          onChange={(e) => setMessage(e.target.value)}
-          value={message}
-        />
+        <textarea name="message" onChange={(e) => setMessage(e.target.value)} value={message} />
         <input id="submitBtn" type="submit" value="Send" />
       </form>
     </section>

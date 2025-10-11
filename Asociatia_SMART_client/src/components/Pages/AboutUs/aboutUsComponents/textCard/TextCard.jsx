@@ -1,8 +1,8 @@
+/* eslint-disable react/prop-types */
 import "./TextCardStyles.css";
 import { useState, useEffect } from "react";
 
 export default function TextCard(props) {
-  console.log();
   const [mediaTrigger, setMediaTrigger] = useState(false);
 
   useEffect(() => {
@@ -26,11 +26,7 @@ export default function TextCard(props) {
 
   return (
     <div
-      style={
-        mediaTrigger
-          ? { backgroundColor: `${props.styles.backgroundColor}` }
-          : props.styles
-      }
+      style={mediaTrigger ? { backgroundColor: `${props.styles.backgroundColor}` } : props.styles}
       className="textCard-container"
     >
       <div className="textCard-title-wrapper">
