@@ -1,6 +1,10 @@
 import "./TaxRedirectInfoPannelStyles.css";
+import { useLanguage } from "../../../../hooks/useLanguage";
 
 export default function TaxRedirectInfoPannel() {
+  const { strings } = useLanguage();
+  const { title, intro, benefits, callToAction } = strings.donateText.taxRedirect;
+
   return (
     <section className="taxRedirect-section">
       <img
@@ -9,40 +13,20 @@ export default function TaxRedirectInfoPannel() {
         alt="logo"
       />
       <div className="taxRedirect-div-wrapper">
-        <h1 className="taxRedirect-section-title">
-          Redirecționează 3,5% din Impozitul pe Venit: Un act simplu cu un
-          Impact Imens
-        </h1>
-        <p>
-          Fiecare 3,5% din impozitul pe venit pe care îl redirecționezi către
-          Asociația SMART reprezintă o investiție directă în viitorul
-          educațional și cultural al comunităților rurale. Prin această gestă
-          simplă, contribui la:
-        </p>
+        <h1 className="taxRedirect-section-title">{title}</h1>
+        <p>{intro}</p>
         <div className="taxRedirect-numberedText-div">
           <p>
-            1.Acces la educație de calitate: Oferim resurse, programe și
-            facilități pentru a asigura că fiecare copil din mediul rural are
-            acces la o educație de calitate, construind baze solide pentru
-            viitorul lor.
+            {benefits.qualityEducation.number}.{benefits.qualityEducation.title} {benefits.qualityEducation.description}
           </p>
           <p>
-            2.Promovarea culturii locale: Conservăm tradițiile, susținem
-            artiștii și promovăm evenimente culturale care îmbogățesc și
-            păstrează identitatea culturală a comunităților rurale.
+            {benefits.localCulture.number}.{benefits.localCulture.title} {benefits.localCulture.description}
           </p>
           <p>
-            3.Dezvoltarea sustenabilă: Investim în proiecte și inițiative care
-            contribuie la dezvoltarea durabilă a comunităților, creând un mediu
-            propice pentru creșterea și prosperitatea pe termen lung.
+            {benefits.sustainableDevelopment.number}.{benefits.sustainableDevelopment.title} {benefits.sustainableDevelopment.description}
           </p>
         </div>
-        <p>
-          Prin redirecționarea impozitului tău către Asociația SMART, devii un
-          arhitect al schimbării, contribuind la transformarea reală a vieților
-          și a comunităților. Un mic gest cu un impact uriaș! Redirecționează
-          acum și construiește viitorul împreună cu noi!
-        </p>
+        <p>{callToAction}</p>
       </div>
     </section>
   );

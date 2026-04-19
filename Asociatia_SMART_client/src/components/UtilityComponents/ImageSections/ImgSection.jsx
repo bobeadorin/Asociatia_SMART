@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import "./ImgSectionStyles.css";
 
 export default function ImgSection(props) {

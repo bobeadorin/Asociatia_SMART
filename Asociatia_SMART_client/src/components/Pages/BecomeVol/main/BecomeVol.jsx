@@ -1,42 +1,31 @@
 import "./BecomeVolStyles.css";
 import ImgSection from "../../../UtilityComponents/ImageSections/ImgSection";
+import { useLanguage } from "../../../../hooks/useLanguage";
 
 export default function BecomeVol() {
+  const { strings } = useLanguage();
+  const { header, introDescription, whyJoinSection } = strings.becomeVolunteerText;
+
   return (
     <section>
       <ImgSection url="/BecomeVolLogos/BecomeVolLogo.png" />
       <div className="BecomeVolunteer-wrapper">
-        <h1>Alătură-te misiunii noastre de transformare!</h1>
-        <p>
-          Suntem în căutarea de inimi generoase și entuziasmate care vor să facă
-          parte din schimbarea pozitivă în comunitățile rurale. Dacă ai pasiunea
-          pentru educație și vrei să contribui la reducerea sărăciei, te invităm
-          să devii voluntar alături de noi.
-        </p>
-        <h2>De ce sa te alături:</h2>
+        <h1>{header}</h1>
+        <p>{introDescription}</p>
+        <h2>{whyJoinSection.sectionTitle}</h2>
         <hr style={{ width: "100%" }} />
         <section className="text-section-sideImg">
           <div>
-            <h2>Impact real:</h2>
-            <p>
-              Fii parte a unui efort care schimbă vieți și construiește viitorul
-              copiilor și tinerilor din comunitățile rurale.
-            </p>
+            <h2>{whyJoinSection.realImpact.heading}</h2>
+            <p>{whyJoinSection.realImpact.description}</p>
 
-            <h2>Experiență valorizantă: </h2>
-            <p>
-              Dezvoltă-ți abilitățile și contribuie la proiecte care aduc
-              schimbare semnificativă.
-            </p>
-            <h2>Comunitate unită: </h2>
+            <h2>{whyJoinSection.valuableExperience.heading}</h2>
+            <p>{whyJoinSection.valuableExperience.description}</p>
+            <h2>{whyJoinSection.unitedCommunity.heading}</h2>
 
+            <p>{whyJoinSection.unitedCommunity.description}</p>
             <p>
-              Alătură-te unei echipe pasionate și unite, unde fiecare voluntar
-              contează
-            </p>
-            <p>
-              Înscrie-te la adresa <b>contact.asociatiasmart@gmail.com </b>
-              și fii parte din schimbarea pe care o dorești să o vezi în lume!
+              {whyJoinSection.enrollmentInfo}
             </p>
           </div>
           <img src="/BecomeVolLogos/SideLogo.png" alt="" />

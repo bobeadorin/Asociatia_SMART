@@ -1,17 +1,17 @@
+/* eslint-disable react/prop-types */
 import "./ProjectItemStyles.css";
 
-export default function ProjectItem(projectData) {
-  console.log(projectData);
+export default function ProjectItem({ projectTitlePrefix = "", projectName, projectDescription, imagePath }) {
   return (
     <section className="projectItem-section">
       <div className="projectItem-container">
         <div className="projectItem-titleSection">
-          <h2 className="projectItem-Title">Proiectul {projectData.projectName}</h2>
+          <h2 className="projectItem-Title">{projectTitlePrefix}{projectName}</h2>
           <hr />
         </div>
-        <div className="projectItem-Description">{projectData.projectDescription}</div>
+        <div className="projectItem-Description">{projectDescription}</div>
       </div>
-      <img className="projectItem-image" src={projectData.imagePath} alt="" />
+      <img className="projectItem-image" src={imagePath} alt="" />
     </section>
   );
 }

@@ -2,8 +2,10 @@ import "./NavbarStyles.css";
 import { Link, useNavigate } from "react-router-dom";
 import routes from "./navRoutes";
 import { useState, useRef, useEffect } from "react";
+import { useLanguage } from "../../../hooks/useLanguage";
 
 export default function Navbar() {
+  const { strings } = useLanguage();
   const [isClosed, setIsClosed] = useState(false);
   const [activeLink, setActiveLink] = useState(routes.homePage);
   const navigate = useNavigate();
@@ -51,7 +53,7 @@ export default function Navbar() {
             to={routes.homePage}
             onClick={() => handleLinkClick(routes.homePage)}
           >
-            ACASĂ
+            {strings.navigationText.navbar.home}
           </Link>
         </div>
         <div className="navbar-route-btns-container">
@@ -60,7 +62,7 @@ export default function Navbar() {
             to={routes.aboutUs}
             onClick={() => handleLinkClick(routes.aboutUs)}
           >
-            DESPRE NOI
+            {strings.navigationText.navbar.aboutUs}
           </Link>
         </div>
         <div className="navbar-route-btns-container">
@@ -69,7 +71,7 @@ export default function Navbar() {
             to={routes.projects}
             onClick={() => handleLinkClick(routes.projects)}
           >
-            PROIECTE
+            {strings.navigationText.navbar.projects}
           </Link>
         </div>
         <div className="navbar-route-btns-container">
@@ -78,7 +80,7 @@ export default function Navbar() {
             to={routes.becomeVol}
             onClick={() => handleLinkClick(routes.becomeVol)}
           >
-            FII VOLUNTAR
+            {strings.navigationText.navbar.becomeVolunteer}
           </Link>
         </div>
         <div className="navbar-route-btns-container">
@@ -87,7 +89,7 @@ export default function Navbar() {
             to={routes.donate}
             onClick={() => handleLinkClick(routes.donate)}
           >
-            DONEAZĂ
+            {strings.navigationText.navbar.donate}
           </Link>
         </div>
         <div className="navbar-route-btns-container">
@@ -96,7 +98,7 @@ export default function Navbar() {
             to={routes.contact}
             onClick={() => handleLinkClick(routes.contact)}
           >
-            CONTACT
+            {strings.navigationText.navbar.contact}
           </Link>
         </div>
       </div>

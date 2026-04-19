@@ -1,9 +1,11 @@
 import "./FooterStyles.css";
 import { Link } from "react-router-dom";
 import legalRoutes from "./legalInfoRoutes";
-import routes from "../Navbar/navRoutes";
+import { useLanguage } from "../../../hooks/useLanguage";
 
 export default function Footer() {
+  const { strings } = useLanguage();
+
   return (
     <footer className="footer-container">
       <div className="footer-logo-info-container">
@@ -34,20 +36,20 @@ export default function Footer() {
       </div>
 
       <div>
-        <p className="infoTitle-footer-p">Informații utile:</p>
+        <p className="infoTitle-footer-p">{strings.navigationText.footer.usefulInfo}</p>
         <span className="arrowed-text">
           <img src="/sharedLogos/arrow.png" alt="" />
           <p>
             {" "}
             <Link to={legalRoutes.policyRoute}>
-              Politica de confidențialitate
+              {strings.navigationText.footer.privacyPolicy}
             </Link>
           </p>
         </span>
         <span className="arrowed-text">
           <img src="/sharedLogos/arrow.png" alt="" />
           <p>
-            <Link to={legalRoutes.termsRoute}>Termeni și condiții</Link>
+            <Link to={legalRoutes.termsRoute}>{strings.navigationText.footer.termsAndConditions}</Link>
           </p>
         </span>
       </div>

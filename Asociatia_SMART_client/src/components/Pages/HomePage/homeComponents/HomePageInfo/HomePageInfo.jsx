@@ -1,18 +1,21 @@
 import "./HomePageInfoStyles.css";
-import homePageInfoText from "./homePageInfoText.js";
+import { useLanguage } from "../../../../../hooks/useLanguage";
 
 export default function HomePageInfo() {
+  const { strings } = useLanguage();
+  const { donateSection, involveSection } = strings.homePageText;
+
   return (
     <section className="homePageInfo-container">
       <div className="text-wrapper">
-        <img src={homePageInfoText.firstImgPath} alt="" />
-        <h3 className="donateInfo-title">{homePageInfoText.firstH}</h3>
-        <p>{homePageInfoText.firstP}</p>
+        <img src={donateSection.firstImgPath} alt="" />
+        <h3 className="donateInfo-title">{donateSection.heading}</h3>
+        <p>{donateSection.description}</p>
       </div>
       <div className="text-wrapper">
-        <img src={homePageInfoText.secondImgPath} alt="" />
-        <h3>{homePageInfoText.secondH}</h3>
-        <p>{homePageInfoText.secondP}</p>
+        <img src={involveSection.secondImgPath} alt="" />
+        <h3>{involveSection.heading}</h3>
+        <p>{involveSection.description}</p>
       </div>
     </section>
   );

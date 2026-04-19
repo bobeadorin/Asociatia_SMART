@@ -8,3 +8,8 @@ Proiectul s-a născut din convingerea că fiecare copil merită șansa la educa�
     imagePath: "/ProjectsPageLogos/projectItem_Beez_Smart/itemLogo.jpg",
   },
 };
+
+export const LANGUAGES = {
+  EN: "EN",
+  RO: "RO",
+};

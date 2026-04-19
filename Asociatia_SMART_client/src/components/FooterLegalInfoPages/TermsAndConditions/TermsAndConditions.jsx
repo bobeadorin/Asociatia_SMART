@@ -1,145 +1,127 @@
 import "./TermsAndConditionsStyles.css";
+import { useLanguage } from "../../../hooks/useLanguage";
 
 export default function TermsAndConditions() {
+  const { strings } = useLanguage();
+  const { welcome, introText, sections, agreementStatement } = strings.termsAndConditionsText;
+  const {
+    siteUsage,
+    personalInformation,
+    contentOwnership,
+    liability,
+    modifications,
+    contact,
+  } = sections;
+
   return (
     <article className="termsAndConditions-container">
       <section className="terms-content-wrapper">
-        <h1 className="terms-section-title">
-          Bun venit pe site-ul și în comunitatea Asociației SMART.
-        </h1>
-        <p className="terms-starting-p">
-          Prin accesarea și utilizarea serviciilor noastre, sunteți de acord să
-          respectați acești Termeni și Condiții. Vă rugăm să citiți cu atenție
-          aceste informații.
-        </p>
+        <h1 className="terms-section-title">{welcome}</h1>
+        <p className="terms-starting-p">{introText}</p>
 
-        <h2 className="terms-titles">1. Utilizarea Site-ului</h2>
+        <h2 className="terms-titles">{siteUsage.title}</h2>
         <p>
-          <strong className="terms-subTitles">
-            1.1. Accesul și Utilizarea:
-          </strong>
+          <strong className="terms-subTitles">{siteUsage.accessAndUsage.subtitle}</strong>
         </p>
         <ul className="terms-text-wrapper">
-          <li className="terms-normalText">
-            Prin accesarea și utilizarea site-ului nostru, vă angajați să
-            respectați acești Termeni și Condiții.
-          </li>
-          <li className="terms-normalText">
-            Sunteți responsabil pentru furnizarea de informații corecte și
-            actualizate în timpul utilizării serviciilor noastre.
-          </li>
+          {siteUsage.accessAndUsage.points.map((point) => (
+            <li key={point} className="terms-normalText">
+              {point}
+            </li>
+          ))}
         </ul>
         <p>
-          <strong className="terms-subTitles">
-            1.2. Utilizarea Necorespunzătoare:
-          </strong>
+          <strong className="terms-subTitles">{siteUsage.misuse.subtitle}</strong>
         </p>
         <ul className="terms-text-wrapper">
-          <li className="terms-normalText">
-            Nu sunteți permis să utilizați site-ul în scopuri ilegale sau
-            neetice.
-          </li>
-          <li className="terms-normalText">
-            Orice utilizare abuzivă a site-ului poate duce la suspendarea sau
-            încetarea accesului dvs.
-          </li>
+          {siteUsage.misuse.points.map((point) => (
+            <li key={point} className="terms-normalText">
+              {point}
+            </li>
+          ))}
         </ul>
 
-        <h2 className="terms-titles">2. Informații Personale</h2>
+        <h2 className="terms-titles">{personalInformation.title}</h2>
         <p>
-          <strong className="terms-subTitles">2.1. Confidențialitate:</strong>
+          <strong className="terms-subTitles">{personalInformation.confidentiality.subtitle}</strong>
         </p>
         <ul className="terms-text-wrapper">
-          <li className="terms-normalText">
-            Informațiile personale furnizate vor fi tratate conform Politicii de
-            Confidențialitate a Asociației SMART.
-          </li>
+          {personalInformation.confidentiality.points.map((point) => (
+            <li key={point} className="terms-normalText">
+              {point}
+            </li>
+          ))}
         </ul>
         <p>
-          <strong className="terms-subTitles">
-            2.2. Corectitudinea Informațiilor:
-          </strong>
+          <strong className="terms-subTitles">{personalInformation.informationAccuracy.subtitle}</strong>
         </p>
         <ul className="terms-text-wrapper">
-          <li className="terms-normalText">
-            Sunteți responsabil pentru corectitudinea informațiilor personale
-            furnizate și pentru menținerea acestora actualizate.
-          </li>
-        </ul>
-
-        <h2 className="terms-titles">3. Conținutul Site-ului</h2>
-        <p>
-          <strong className="terms-subTitles">
-            3.1. Drepturi de Proprietate Intelectuală:
-          </strong>
-        </p>
-        <ul className="terms-text-wrapper">
-          <li className="terms-normalText">
-            Conținutul site-ului, inclusiv textele, imaginile și alte materiale,
-            sunt protejate de drepturile de autor și alte legi privind
-            proprietatea intelectuală.
-          </li>
-        </ul>
-        <p>
-          <strong className="terms-subTitles">
-            3.2. Utilizarea Conținutului:
-          </strong>
-        </p>
-        <ul className="terms-text-wrapper">
-          <li className="terms-normalText">
-            Nu aveți voie să reproduceți, distribuiți sau modificați conținutul
-            site-ului fără permisiunea expresă a Asociației SMART.
-          </li>
+          {personalInformation.informationAccuracy.points.map((point) => (
+            <li key={point} className="terms-normalText">
+              {point}
+            </li>
+          ))}
         </ul>
 
-        <h2 className="terms-titles">4. Responsabilitate</h2>
+        <h2 className="terms-titles">{contentOwnership.title}</h2>
         <p>
-          <strong className="terms-subTitles">
-            4.1. Exonerare de Răspundere:
-          </strong>
+          <strong className="terms-subTitles">{contentOwnership.intellectualRights.subtitle}</strong>
         </p>
         <ul className="terms-text-wrapper">
-          <li className="terms-normalText">
-            Asociația SMART nu poate fi trasă la răspundere pentru prejudiciile
-            sau pierderile survenite din utilizarea sau incapacitatea de
-            utilizare a site-ului.
-          </li>
+          {contentOwnership.intellectualRights.points.map((point) => (
+            <li key={point} className="terms-normalText">
+              {point}
+            </li>
+          ))}
         </ul>
-
-        <h2 className="terms-titles">
-          5. Modificări ale Termenilor și Condițiilor
-        </h2>
         <p>
-          <strong className="terms-subTitles">5.1. Actualizări:</strong>
+          <strong className="terms-subTitles">{contentOwnership.contentUsage.subtitle}</strong>
         </p>
         <ul className="terms-text-wrapper">
-          <li className="terms-normalText">
-            Asociația SMART își rezervă dreptul de a modifica acești Termeni și
-            Condiții în orice moment. Orice modificare va fi afișată pe site.
-          </li>
+          {contentOwnership.contentUsage.points.map((point) => (
+            <li key={point} className="terms-normalText">
+              {point}
+            </li>
+          ))}
         </ul>
 
-        <h2 className="terms-titles">6. Contact</h2>
+        <h2 className="terms-titles">{liability.title}</h2>
         <p>
-          <strong className="terms-subTitles">
-            6.1. Întrebări și Comentarii:
-          </strong>
+          <strong className="terms-subTitles">{liability.disclaimer.subtitle}</strong>
         </p>
         <ul className="terms-text-wrapper">
-          <li className="terms-normalText">
-            Pentru întrebări sau comentarii cu privire la acești Termeni și
-            Condiții, vă rugăm să ne contactați la adresa{" "}
-            <a href="mailto:contact.asociatiasmart@gmail.com">
-              contact.asociatiasmart@gmail.com
-            </a>
-            .
-          </li>
+          {liability.disclaimer.points.map((point) => (
+            <li key={point} className="terms-normalText">
+              {point}
+            </li>
+          ))}
         </ul>
 
+        <h2 className="terms-titles">{modifications.title}</h2>
         <p>
-          Prin utilizarea site-ului nostru, sunteți de acord cu acești Termeni
-          și Condiții.
+          <strong className="terms-subTitles">{modifications.updates.subtitle}</strong>
         </p>
+        <ul className="terms-text-wrapper">
+          {modifications.updates.points.map((point) => (
+            <li key={point} className="terms-normalText">
+              {point}
+            </li>
+          ))}
+        </ul>
+
+        <h2 className="terms-titles">{contact.title}</h2>
+        <p>
+          <strong className="terms-subTitles">{contact.questions.subtitle}</strong>
+        </p>
+        <ul className="terms-text-wrapper">
+          {contact.questions.points.map((point) => (
+            <li key={point} className="terms-normalText">
+              {point}
+            </li>
+          ))}
+        </ul>
+
+        <p>{agreementStatement}</p>
       </section>
     </article>
   );
