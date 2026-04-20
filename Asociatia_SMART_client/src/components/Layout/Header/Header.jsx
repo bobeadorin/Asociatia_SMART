@@ -28,7 +28,6 @@ export default function Header() {
           </span>
         </div>
       </div>
-
       <div className="header-logoContainers">
         <a href="https://www.facebook.com/profile.php?id=61556478462754" id="purpleLogos" target="_blank">
           <img src="/sharedLogos/facebookLogoPurple.png" alt="" />
