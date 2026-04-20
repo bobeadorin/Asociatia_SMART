@@ -23,7 +23,6 @@ export const headerTextEN = {
   },
 };
 
-// ENGLISH - HOMEPAGE TEXT
 export const homePageTextEN = {
   donateSection: {
     firstImgPath: "/HomePageLogos/handHearthLogo.png",
@@ -42,7 +41,6 @@ export const homePageTextEN = {
   },
 };
 
-// ENGLISH - ABOUT US PAGE TEXT
 export const aboutUsTextEN = {
   aboutCard: {
     title: "About Us",
@@ -96,7 +94,6 @@ export const aboutUsTextEN = {
   },
 };
 
-// ENGLISH - BECOME VOLUNTEER PAGE TEXT
 export const becomeVolunteerTextEN = {
   header: "Join Our Mission of Transformation!",
   introDescription: `We are looking for generous and enthusiastic people who want to be part of positive change in rural communities. If you are passionate about education and want to contribute to reducing poverty, we invite you to become a volunteer with us.`,
@@ -121,7 +118,6 @@ export const becomeVolunteerTextEN = {
   },
 };
 
-// ENGLISH - CONTACT US PAGE TEXT
 export const contactUsTextEN = {
   formSection: {
     title: "Write to us here:",
@@ -140,7 +136,6 @@ export const contactUsTextEN = {
   },
 };
 
-// ENGLISH - DONATE PAGE TEXT
 export const donateTextEN = {
   header: "Call for Donations: Building a Brighter Future",
   introDescription:
@@ -213,7 +208,6 @@ export const donateTextEN = {
   },
 };
 
-// ENGLISH - PROJECTS PAGE TEXT
 export const projectsTextEN = {
   beezSmart: {
     name: `"Beez SMART"`,
@@ -231,6 +225,7 @@ The project was born from the belief that every child deserves a chance at educa
       "They took part in 16 non-formal workshops focused on teamwork, free expression, ecology, personal development, and civic education.",
       "They learned how to better manage their emotions, communicate more easily, discover their talents, and feel part of a group.",
     ],
+    imagePath: "/ProjectsPageLogos/projectItem_Beez_Smart/itemLogo.jpg",
   },
   projectItemTitlePrefix: "The ",
   beezSmartPage: {
@@ -282,7 +277,6 @@ The project was born from the belief that every child deserves a chance at educa
   },
 };
 
-// ENGLISH - TERMS AND CONDITIONS PAGE TEXT
 export const termsAndConditionsTextEN = {
   welcome: "Welcome to the S.M.A.R.T. Association website and community.",
   introText:
@@ -367,7 +361,6 @@ export const termsAndConditionsTextEN = {
     "By using our website, you agree to these Terms and Conditions.",
 };
 
-// ENGLISH - CONFIDENTIALITY POLICY PAGE TEXT
 export const confidentialityPolicyTextEN = {
   welcome: "Thank you for choosing to connect with the S.M.A.R.T. Association.",
   introText:

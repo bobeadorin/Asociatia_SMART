@@ -1,4 +1,3 @@
-// NAVIGATION & MENU TEXT
 export const navigationText = {
   navbar: {
     home: "ACASĂ",
@@ -24,7 +23,6 @@ export const headerText = {
   },
 };
 
-// HOMEPAGE TEXT
 export const homePageText = {
   donateSection: {
     firstImgPath: "/HomePageLogos/handHearthLogo.png",
@@ -44,7 +42,6 @@ export const homePageText = {
   },
 };
 
-// ABOUT US PAGE TEXT
 export const aboutUsText = {
   aboutCard: {
     title: "Despre noi",
@@ -71,13 +68,11 @@ export const aboutUsText = {
     values: {
       equality: {
         label: "Egalitate:",
-        description:
-          "Egalitatea de șanse pentru fiecare copil și tânăr, indiferent de contextul socio-economic sau geografic.",
+        description: "Egalitatea de șanse pentru fiecare copil și tânăr, indiferent de contextul socio-economic sau geografic.",
       },
       inclusion: {
         label: "Incluziune:",
-        description:
-          "Crearea unei societăți incluzive, unde fiecare copil și tânăr este valorificat și respectat.",
+        description: "Crearea unei societăți incluzive, unde fiecare copil și tânăr este valorificat și respectat.",
       },
       sustainability: {
         label: "Sustenabilitate:",
@@ -95,14 +90,12 @@ export const aboutUsText = {
       },
       transparency: {
         label: "Transparență:",
-        description:
-          "Angajarea unei comunitări deschise și transparente în toate acțiunile desfășurate.",
+        description: "Angajarea unei comunitări deschise și transparente în toate acțiunile desfășurate.",
       },
     },
   },
 };
 
-// BECOME VOLUNTEER PAGE TEXT
 export const becomeVolunteerText = {
   header: "Alătură-te misiunii noastre de transformare!",
   introDescription: `Suntem în căutarea de inimi generoase și entuziasmate care vor să facă
@@ -118,19 +111,16 @@ export const becomeVolunteerText = {
     },
     valuableExperience: {
       heading: "Experiență valorizantă:",
-      description:
-        "Dezvoltă-ți abilitățile și contribuie la proiecte care aduc schimbare semnificativă.",
+      description: "Dezvoltă-ți abilitățile și contribuie la proiecte care aduc schimbare semnificativă.",
     },
     unitedCommunity: {
       heading: "Comunitate unită:",
-      description:
-        "Alătură-te unei echipe pasionate și unite, unde fiecare voluntar contează",
+      description: "Alătură-te unei echipe pasionate și unite, unde fiecare voluntar contează",
     },
     enrollmentInfo: `Înscrie-te la adresa contact.asociatiasmart@gmail.com și fii parte din schimbarea pe care o dorești să o vezi în lume!`,
   },
 };
 
-// CONTACT US PAGE TEXT
 export const contactUsText = {
   formSection: {
     title: "Scrie-ne aici:",
@@ -149,19 +139,16 @@ export const contactUsText = {
   },
 };
 
-// DONATE PAGE TEXT
 export const donateText = {
   header: "Apel pentru Donații: Construim Un Viitor Mai Luminos",
   introDescription:
     "Fiecare donație contează și este un pas către schimbarea pozitivă în viețile copiilor și tinerilor din comunitățile rurale.",
   donationMethods: {
     legalEntity: {
-      description:
-        "Dacă ești persoană juridică poți redirecționa 20% din impozitul pe profit datorat statului",
+      description: "Dacă ești persoană juridică poți redirecționa 20% din impozitul pe profit datorat statului",
     },
     bankTransfer: {
-      description:
-        "Donează prin Trasfer Bancar direct în contul Asociației S.M.A.R.T.",
+      description: "Donează prin Trasfer Bancar direct în contul Asociației S.M.A.R.T.",
       iban: "IBAN: RO73RNCB0174155218880001",
     },
   },
@@ -194,8 +181,7 @@ export const donateText = {
     },
   },
   taxRedirect: {
-    title:
-      "Redirecționează 3,5% din Impozitul pe Venit: Un act simplu cu un Impact Imens",
+    title: "Redirecționează 3,5% din Impozitul pe Venit: Un act simplu cu un Impact Imens",
     intro: `Fiecare 3,5% din impozitul pe venit pe care îl redirecționezi către
           Asociația SMART reprezintă o investiție directă în viitorul
           educațional și cultural al comunităților rurale. Prin această gestă
@@ -225,7 +211,6 @@ export const donateText = {
   },
 };
 
-// PROJECTS PAGE TEXT
 export const projectsText = {
   beezSmart: {
     name: `„Beez SMART"`,
@@ -248,12 +233,12 @@ Proiectul s-a născut din convingerea că fiecare copil merită șansa la educa�
             motivație și sentimentul că nu sunt singuri pe drumul lor.`,
     projectGoal: `Scopul proiectului este de a crește motivația pentru educație, de a dezvolta abilități personale și sociale, și de a
             crea un mediu incluziv, în care fiecare copil se simte ascultat, respectat și susținut.`,
-    projectMeaning:
-      `„Beez SMART" înseamnă încredere, curaj și solidaritate, dar mai ales un pas înainte către un viitor mai bun pentru fiecare copil care are nevoie doar de un context potrivit ca să strălucească.`,
+    projectMeaning: `„Beez SMART" înseamnă încredere, curaj și solidaritate, dar mai ales un pas înainte către un viitor mai bun pentru fiecare copil care are nevoie doar de un context potrivit ca să strălucească.`,
     activities: [
       "Au participat la 16 ateliere non-formale centrate pe lucrul în echipă, exprimare liberă, ecologie, dezvoltare personală și civică.",
       "Au învățat cum să-și gestioneze emoțiile, să comunice mai ușor, să-și descopere talentele și să se simtă parte din comunitate.",
     ],
+    imagePath: "/ProjectsPageLogos/projectItem_Beez_Smart/itemLogo.jpg",
   },
   projectItemTitlePrefix: "Proiectul ",
   beezSmartPage: {
@@ -305,7 +290,6 @@ Proiectul s-a născut din convingerea că fiecare copil merită șansa la educa�
   },
 };
 
-// TERMS AND CONDITIONS PAGE TEXT
 export const termsAndConditionsText = {
   welcome: "Bun venit pe site-ul și în comunitatea Asociației SMART.",
   introText:
@@ -332,9 +316,7 @@ export const termsAndConditionsText = {
       title: "2. Informații Personale",
       confidentiality: {
         subtitle: "2.1. Confidențialitate:",
-        points: [
-          "Informațiile personale furnizate vor fi tratate conform Politicii de Confidențialitate a Asociației SMART.",
-        ],
+        points: ["Informațiile personale furnizate vor fi tratate conform Politicii de Confidențialitate a Asociației SMART."],
       },
       informationAccuracy: {
         subtitle: "2.2. Corectitudinea Informațiilor:",
@@ -386,11 +368,9 @@ export const termsAndConditionsText = {
       },
     },
   },
-  agreementStatement:
-    "Prin utilizarea site-ului nostru, sunteți de acord cu acești Termeni și Condiții.",
+  agreementStatement: "Prin utilizarea site-ului nostru, sunteți de acord cu acești Termeni și Condiții.",
 };
 
-// CONFIDENTIALITY POLICY PAGE TEXT
 export const confidentialityPolicyText = {
   welcome: "Mulțumim pentru că ați ales să vă conectați cu Asociația SMART.",
   introText:
@@ -409,17 +389,12 @@ export const confidentialityPolicyText = {
       },
       usageInformation: {
         subtitle: "Informații de Utilizare:",
-        items: [
-          "Adresa IP",
-          "Dispozitivul și browser-ul utilizat",
-          "Paginile vizitate pe site-ul nostru",
-        ],
+        items: ["Adresa IP", "Dispozitivul și browser-ul utilizat", "Paginile vizitate pe site-ul nostru"],
       },
     },
     collectionPurpose: {
       title: "2. Scopul Colectării Informațiilor",
-      description:
-        "Informațiile colectate sunt utilizate în principal pentru:",
+      description: "Informațiile colectate sunt utilizate în principal pentru:",
       purposes: [
         "Contactarea și răspunsul la solicitările dvs.",
         "Îmbunătățirea și personalizarea experienței dvs. pe site.",
@@ -458,6 +433,5 @@ export const confidentialityPolicyText = {
         "Dacă aveți întrebări sau preocupări cu privire la această politică de confidențialitate, vă rugăm să ne contactați la adresa: contact.asociatiasmart@gmail.com",
     },
   },
-  agreementStatement:
-    "Prin utilizarea site-ului nostru, sunteți de acord cu această politică de confidențialitate.",
+  agreementStatement: "Prin utilizarea site-ului nostru, sunteți de acord cu această politică de confidențialitate.",
 };

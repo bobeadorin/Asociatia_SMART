@@ -13,7 +13,7 @@ export default function Projects() {
       <div className="projects-logo-container">
         <img className="projects-img" src="/ProjectsPageLogos/ProjectsMainLogo.png" alt="" />
       </div>
-      <div className="projects-container" onClick={() => navigate("/Proiecte/BeezSMART") }>
+      <div className="projects-container" onClick={() => navigate("/Proiecte/BeezSMART")}>
         <ProjectItem
           projectTitlePrefix={strings.projectsText.projectItemTitlePrefix}
           projectName={project.name}
